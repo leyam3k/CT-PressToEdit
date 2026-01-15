@@ -1,33 +1,51 @@
-# SillyTavern Extension Example
+# CT-PressToEdit
 
-_Provide a brief description of how your extension works, what problem it aims to solve._
+A SillyTavern/CozyTavern extension that provides an easy and accessible way to edit messages by long-pressing (desktop) or double-tapping (mobile).
 
 ## Features
 
-_Describe some of the main selling points of your extension._
+- **Desktop**: Long-press on any message text to enter edit mode
+- **Mobile**: Double-tap on any message text to enter edit mode (preserves long-press for text selection)
+- **Configurable timing**: Adjust long-press duration or double-tap speed to your preference
+- **Smart detection**: Automatically detects device type and applies appropriate interaction method
+- **Non-intrusive**: Cancels edit trigger if you start scrolling, dragging, or selecting text
 
-## Installation and Usage
+## Installation
 
-### Installation
+### Using SillyTavern's Extension Installer
 
-_In most cases, this should just be using ST's inbuilt extension installer._
+1. Open SillyTavern
+2. Go to **Extensions** panel
+3. Click **Install Extension**
+4. Enter the repository URL: `https://github.com/leyam3k/CT-PressToEdit`
+5. Click **Save**
 
-### Usage
+### Manual Installation
 
-_Explain how to use this extension._
+1. Navigate to your SillyTavern installation folder
+2. Go to `public/scripts/extensions/third-party/`
+3. Clone or download this repository into that folder
+4. Restart SillyTavern
+
+## Usage
+
+Once installed, the extension works automatically:
+
+- **On Desktop (mouse/trackpad)**: Press and hold on a message's text for the configured duration (default: 300ms) to enter edit mode
+- **On Mobile (touch)**: Double-tap on a message's text to enter edit mode
+
+### Settings
+
+Find the settings panel under **Extensions** → **CT-PressToEdit**:
+
+- **Enable quick message editing**: Toggle the extension on/off
+- **Press duration** (Desktop): How long to hold before triggering edit (200-1500ms)
+- **Double-tap speed** (Mobile): Maximum time between taps (150-500ms)
 
 ## Prerequisites
 
-_Specify the version of ST necessary here._
-
-## Support and Contributions
-
-_Where should someone ask for support?_
-
-_Consider including your own contact info for help/questions._
-
-_How can people help add to this extension?_
+- SillyTavern version 1.12.0 or higher
 
 ## License
 
-_Be cool, use an open source license._
+AGPL-3.0
